@@ -9,6 +9,10 @@ if [ -n "$USE_HOST_NETWORK" ]; then
     PROPERTY_localBindAddress=$LOCAL_IP
 fi
 
+if [ -n "$LOG_LEVEL" ]; then
+    sed -i  "s|<priority value=\"INFO\"/>|<priority value=\"${LOG_LEVEL}\"/>|"  $BASE_DIR/conf/log4j.xml
+fi
+
 set_xml_property () {
     local property=$1
     local new_value=$2
