@@ -2,7 +2,8 @@ FROM java:7-jdk
 MAINTAINER gdubina@dataart.com
 
 RUN apt-get update && \
-    apt-get install net-tools && \
+    apt-get install -y net-tools xmlstarlet && \
+    alias xml=xmlstarlet && ln -s /usr/bin/xmlstarlet /usr/bin/xml && \
     rm -rf /var/lib/apt/lists/*
 
 ENV work_dir /opt/restcomm-media-server
