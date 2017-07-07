@@ -1,4 +1,6 @@
 # Restcomm MediaServer docker container 
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FRestComm%2Fmediaserver-docker.svg?type=shield)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FRestComm%2Fmediaserver-docker?ref=badge_shield)
+
 
 Restcomm mediaserver repo - https://github.com/RestComm/mediaserver
 
@@ -29,3 +31,6 @@ To override log4j config you can mount own `log4j.xml` file.
 ```shell
 -v $PWD/conf/log4j.xml:/opt/restcomm-media-server/conf/log4j.xml
 ```
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FRestComm%2Fmediaserver-docker.svg?type=large)](https://app.fossa.io/projects/git%2Bhttps%3A%2F%2Fgithub.com%2FRestComm%2Fmediaserver-docker?ref=badge_large)
